@@ -1,9 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: event-dispatcher-checking-ledger
+  name: Schema1
 spec:
-  type: dispatcher
-  owner: atom-crm
+  type: service
+  owner: user:guest
   lifecycle: production
-  system: ledger
+  dependsOn:
+  - component:Teste
